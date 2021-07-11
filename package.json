@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/NeedaMehmud2017/team-profile-generator/issues"
   },
-  "homepage": "https://github.com/NeedaMehmud2017/team-profile-generator#readme"
+  "homepage": "https://github.com/NeedaMehmud2017/team-profile-generator#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "inquirer": "^8.1.1",
+    "jest": "^27.0.6"
+  }
 }
