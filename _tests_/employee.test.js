@@ -1,5 +1,5 @@
 const { describe } = require("yargs");
-const Employee = require("../lib/employee");
+const employee = require("../lib/employee");
 
 describe('rendering employee info', () => {
 
