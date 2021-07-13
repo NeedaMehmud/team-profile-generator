@@ -1,5 +1,4 @@
-const { describe } = require("yargs");
-const employee = require("../lib/employee");
+import employee from ("../lib/employee");
 
 describe('rendering employee info', () => {
 

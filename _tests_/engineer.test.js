@@ -1,5 +1,4 @@
-
-const engineer = require("../lib/engineer");
+import engineer from "../lib/engineer.js";
 
 describe('rendering engineer info', () => {
 
