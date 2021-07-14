@@ -12,13 +12,13 @@ describe('rendering employee info', () => {
     it("should set email via constructor argument", () => {
     });
 
-    it("should get name via getName() class", () => {
+    it("should get name via getName()", () => {
     });
 
-    it("should get id via getId() class", () => {
+    it("should get id via getId()", () => {
     });
 
-    it("should get email via getEmail() class", () => {
+    it("should get email via getEmail()", () => {
     });
 
 });
