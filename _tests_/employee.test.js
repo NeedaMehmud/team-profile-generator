@@ -38,10 +38,10 @@ describe('Employee Info', () => {
         expect(employee.email).toBe(testValue);
     });
 
-    it("should return \"Employee\" via getRole() ", () => {
+    it("should return \"Employee\" via getTitle() ", () => {
         const testValue = "Employee";
         const employee = new Employee("Fatima", 1, "test@test.com");
-        expect(employee.getRole()).toBe(testValue);
+        expect(employee.getTitle()).toBe(testValue);
       });
 
 });
