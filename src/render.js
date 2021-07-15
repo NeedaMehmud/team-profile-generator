@@ -19,25 +19,11 @@ const render = employees => {
     else if (employee.getRole() === "Intern") {
       html.push(renderIntern(employee))
     } else {
-      // error 
+      window.prompt('Try us at a later time');
     }
   }
 
-  // html.push(employees
-  //   .filter(employee => employee.getRole() === "Manager")
-  //   .map(manager => renderManager(manager))
-  // );
-
-  // html.push(employees
-  //   .filter(employee => employee.getRole() === "emp")
-  //   .map(engineer => renderEngineer(engineer))
-  // );
-  // html.push(employees
-  //   .filter(employee => employee.getRole() === "Intern")
-  //   .map(intern => renderIntern(intern))
-  // );
-
-  return html.join(''); //renderMain(html.join(""));
+  return html.join('');
 
 };
 
