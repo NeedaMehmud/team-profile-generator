@@ -37,7 +37,7 @@ THEN I exit the application, and the HTML is generated
 
 
 
-![HTML webpage titled “My Team” features four boxes listing employee names, titles, and other key info.](team-profile-generator.png)
+![HTML webpage titled “My Team” features four boxes listing employee names, titles, and other key info.](media/team-profile-generator.png)
 
 
 
