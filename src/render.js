@@ -2,7 +2,7 @@
 const path = require("path");
 const fs = require("fs");
 
-let templatesDir = './team-template.html';
+let templatesDir = 'src/team-templates/';
 
 const render = employees => {
   const html = [];
@@ -36,7 +36,7 @@ const renderHTML = team => {
 
 
 const renderManager = manager => {
-  let template = fs.readFileSync(path.resolve(templatesDir, "./team-templates/manager.html"), "utf8");
+  let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8");
   template = replacePlaceholders(template, "manager-name", manager.getName());
   template = replacePlaceholders(template, "manager-role", manager.getRole());
   template = replacePlaceholders(template, "manager-email", manager.getEmail());
@@ -46,7 +46,7 @@ const renderManager = manager => {
 };
 
 const renderEngineer = engineer => {
-  let template = fs.readFileSync(path.resolve(templatesDir, "./team-templates/engineer.html"), "utf8");
+  let template = fs.readFileSync(path.resolve(templatesDir, "engineer.html"), "utf8");
   template = replacePlaceholders(template, "engineer-name", engineer.getName());
   template = replacePlaceholders(template, "engineer-role", engineer.getRole());
   template = replacePlaceholders(template, "engineer-email", engineer.getEmail());
@@ -56,7 +56,7 @@ const renderEngineer = engineer => {
 };
 
 const renderIntern = intern => {
-  let template = fs.readFileSync(path.resolve(templatesDir, "./team-templates/intern.html"), "utf8");
+  let template = fs.readFileSync(path.resolve(templatesDir, "intern.html"), "utf8");
   template = replacePlaceholders(template, "intern-name", intern.getName());
   template = replacePlaceholders(template, "intern-role", intern.getRole());
   template = replacePlaceholders(template, "intern-email", intern.getEmail());

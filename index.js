@@ -36,7 +36,7 @@ function managerQuery() {
     }
 
     ]).then(data => {
-        const manager = new Manager(data.name, data.id, data.email, data.officeNumber);
+        const manager = new Manager(data.name, data.id, data.email, data.office);
         console.log(manager)
         teamMembers.push(manager);
         addTeamMember();
