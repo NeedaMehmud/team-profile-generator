@@ -1,12 +1,22 @@
-import manager from "../lib/manager";
+const Manager = require('../lib/Manager');
+const Employee = require('../lib/Employee');
 
 describe('render manager info', () => {
-    it("Can set office number via constructor argument", () => {
+    it("should set office number via constructor argument", () => {
+        const testValue = 1;
+        const employee = new Manager("Sumaya", 1, "test@test.com", testValue);
+        expect(employee.officeNumber).toBe(testValue);
     });
 
-    it('getRole() should return "Manager"', () => {
+    it('should return "Manager" via getRole()', () => {
+        const testValue = "Manager";
+        const employee = new Manager("Sumaya", 1, "test@test.com", 200);
+        expect(employee.getRole()).toBe(testValue);
     });
 
-    it("Can get office number via getOffice()", () => {
+    it("should get office number via getOffice()", () => {
+        const testValue = 200;
+        const employee = new Manager("Sumaya", 1, "test@test.com", testValue);
+        expect(employee.getOfficeNumber()).toBe(testValue);
     });
 });
