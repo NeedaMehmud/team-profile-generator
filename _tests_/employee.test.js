@@ -4,8 +4,8 @@ describe('Employee Info', () => {
 
     it("should set name via constructor arguments", () => {
         const name = "Fatima";
-        const e = new Employee(name);
-        expect(e.name).toBe(name);
+        const employee = new Employee(name);
+        expect(employee.name).toBe(name);
     });
 
     it("should set id via constructor argument", () => {
@@ -42,7 +42,7 @@ describe('Employee Info', () => {
         const testValue = "Employee";
         const employee = new Employee("Fatima", 1, "test@test.com");
         expect(employee.getRole()).toBe(testValue);
-      });
+    });
 
 });
 
