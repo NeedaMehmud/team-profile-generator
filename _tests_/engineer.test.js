@@ -1,6 +1,6 @@
 const Engineer = require('../lib/Engineer');
 
-    describe('Engineer Info', () => {
+    describe('Rendering engineer info', () => {
     it("should set GitHUb account via constructor", () => {
         const testValue = "githubUser";
         const employee = new Engineer("Maria", 1, "test@test.com", testValue);

@@ -1,6 +1,6 @@
 const Employee = require('../lib/Employee');
 
-describe('Employee Info', () => {
+describe('rendering employee info', () => {
 
     it("should set name via constructor arguments", () => {
         const name = "Fatima";
